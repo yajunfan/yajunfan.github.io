@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,150 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-npm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/22/npm/" class="article-date">
+  <time datetime="2016-08-22T04:20:54.000Z" itemprop="datePublished">2016-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/22/npm/">NPM</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="NPM简介"><a href="#NPM简介" class="headerlink" title="NPM简介"></a>NPM简介</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">NPM（node package manager），通常称为node包管理器。顾名思义，它的主要功能就是管理node包，</div><div class="line">包括：安装、卸载、更新、查看、搜索、发布等。</div><div class="line">它的一个很重要的作用就是：将开发者从繁琐的包管理工作（版本、依赖等）中解放出来，更加专注于功能的开发。</div></pre></td></tr></table></figure>
+<h1 id="NPM的操作"><a href="#NPM的操作" class="headerlink" title="NPM的操作"></a>NPM的操作</h1><ul>
+<li>初始化-&gt;创建一个package.json<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入：npm init</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="依赖列表"><a href="#依赖列表" class="headerlink" title="依赖列表"></a>依赖列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">依赖的好处可以详细描述你的项目</div><div class="line">所有的依赖要放入到依赖列表中</div><div class="line">安装时加入到列表里</div></pre></td></tr></table></figure>
+<ul>
+<li>全局安装<br>所有带-g的都表示全局安装，可以在’命令行’下直接使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div><div class="line">tip:gulp:基于文件流的构建系统；主要是方便以后项目上线的时候，自动进行js，css的合并，压缩，语法检查，监听文件变化（一般和3一起用）</div><div class="line">在任何地方安装都可以 因为安装到全局下</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="查看目录安装"><a href="#查看目录安装" class="headerlink" title="查看目录安装"></a>查看目录安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm root -g</div></pre></td></tr></table></figure>
+<ul>
+<li><p>node npm 都可以在命令行下使用，我把它配置到path中了</p>
+</li>
+<li><p>本地安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">本地安装就是项目中要真正使用的</div><div class="line"> 一个叫开发依赖 例如webpack  --save-dev</div><div class="line">一个叫依赖  jquery --save</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="包的卸载"><a href="#包的卸载" class="headerlink" title="包的卸载"></a>包的卸载</h2><ul>
+<li><p>全局卸载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall gulp -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>本地卸载</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm uninstall jquery --save</div><div class="line">npm uninstall webpack --save-dev</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><ul>
+<li><p>创建用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm adduser</div></pre></td></tr></table></figure>
+</li>
+<li><p>我们想发布我们包 和 jquery一样，让别人使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm publish</div><div class="line">发布之后去https://www.npmjs.com/查看</div><div class="line">发布之后 可以让别人进行下载</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="npm的源的问题"><a href="#npm的源的问题" class="headerlink" title="npm的源的问题"></a>npm的源的问题</h2><h2 id="切换源"><a href="#切换源" class="headerlink" title="切换源"></a>切换源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install nrm -g</div></pre></td></tr></table></figure>
+<h2 id="查看所有源"><a href="#查看所有源" class="headerlink" title="查看所有源"></a>查看所有源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm ls</div></pre></td></tr></table></figure>
+<h2 id="使用源"><a href="#使用源" class="headerlink" title="使用源"></a>使用源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/22/npm/" data-id="cis5pwbv90003ysqlmn0le8bl" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/22/hexo/" class="article-date">
+  <time datetime="2016-08-22T02:09:09.000Z" itemprop="datePublished">2016-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/22/hexo/">Hexo</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="hexo简介"><a href="#hexo简介" class="headerlink" title="hexo简介"></a>hexo简介</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hexo是一个开源的静态博客生成器,用node.js开发</div></pre></td></tr></table></figure>
+<h2 id="创建一个博客"><a href="#创建一个博客" class="headerlink" title="创建一个博客"></a>创建一个博客</h2><h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git</div><div class="line">node.js</div><div class="line">markdown编辑器</div></pre></td></tr></table></figure>
+<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h2><ul>
+<li><p>window</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">在window中，按下window+r---cmd进入命令窗口--nmp install hexo-cli -g</div><div class="line">-g表示在全局下安装，-g可以写在这句代码的人格位置</div></pre></td></tr></table></figure>
+</li>
+<li><p>mac</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在mac需要输入 sudo npm install hexo-cli -g</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-初始化博客"><a href="#3-初始化博客" class="headerlink" title="3.初始化博客"></a>3.初始化博客</h2><ul>
+<li><p>初始化博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog--初始化的项目是没有node_modules</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装所需要的模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">这里有两种：a.直接进入blog的文件夹输入指令--npm-install</div><div class="line">            b.在别的文件下输入命令 cd blog&amp;&amp;npm-install</div><div class="line">            是安装所需要的依赖</div></pre></td></tr></table></figure>
+</li>
+<li><p>启动服务查看当前结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入--hexo server</div></pre></td></tr></table></figure>
+</li>
+<li><p>新建文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">在启动服务后按ctrl+c结束此次服务</div><div class="line">输入 hexo new &apos;文章名&apos;--&gt;在blog--&gt;source--&gt;_posts-找到我新建的文章</div><div class="line">再次启动服务-输入当前的地址</div></pre></td></tr></table></figure>
+</li>
+<li><p>更新文章</p>
+<h2 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h2></li>
+<li><p>下载hexo-deployer 插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改config</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: &lt;repository url&gt;这里要修改成https://github账户名:密码@github.com/github账户名/github账户名.github.io.git</div><div class="line">  branch: master</div><div class="line">  message: push</div></pre></td></tr></table></figure>
+</li>
+<li><p>部署（发布）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy--&gt;就可以在自己的github上看到已经发布的东西</div><div class="line">注意：当再次发布的时候，需要在hexo deploy前执行hexo g</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/22/hexo/" data-id="cis5pwbux0002ysqllzsthtx0" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -75,7 +219,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/21/git/">node.js</a>
+      <a class="article-title" href="/2016/08/21/git/">hexo.js</a>
     </h1>
   
 
@@ -83,52 +227,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##node 基础</p>
-<h2 id="git基础"><a href="#git基础" class="headerlink" title="git基础"></a>git基础</h2><ul>
+        <h2 id="node-基础"><a href="#node-基础" class="headerlink" title="node 基础"></a>node 基础</h2><h2 id="git基础"><a href="#git基础" class="headerlink" title="git基础"></a>git基础</h2><ul>
 <li>添加缓存区<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/21/git/" data-id="cis3zcvk60000ewqlg74n6bg4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/21/git1/" class="article-date">
-  <time datetime="2016-08-21T02:13:54.000Z" itemprop="datePublished">2016-08-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/21/git1/">今天.js</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#搭建博客</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/21/git1/" data-id="cis3zfo1w0002ewqlb6sfh48k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/21/git/" data-id="cis5pwbuq0000ysqlda2vb4s7" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -173,7 +279,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/21/hello-world/" data-id="cis3zcvkb0001ewql10qai9wh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/21/hello-world/" data-id="cis5pwbuu0001ysqlzx5cbddg" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -198,7 +304,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Arkiv</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
     </div>
@@ -208,16 +314,20 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Siste innlegg</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2016/08/21/git/">node.js</a>
+            <a href="/2016/08/22/npm/">NPM</a>
           </li>
         
           <li>
-            <a href="/2016/08/21/git1/">今天.js</a>
+            <a href="/2016/08/22/hexo/">Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/21/git/">hexo.js</a>
           </li>
         
           <li>
