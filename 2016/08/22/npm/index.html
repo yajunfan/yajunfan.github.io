@@ -21,7 +21,7 @@ NPM的操作
 
 
 依赖列表123依赖的好处">
-<meta property="og:updated_time" content="2016-08-22T04:59:34.569Z">
+<meta property="og:updated_time" content="2016-08-22T07:40:40.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NPM">
 <meta name="twitter:description" content="NPM简介123NPM（node package manager），通常称为node包管理器。顾名思义，它的主要功能就是管理node包，包括：安装、卸载、更新、查看、搜索、发布等。它的一个很重要的作用就是：将开发者从繁琐的包管理工作（版本、依赖等）中解放出来，更加专注于功能的开发。
@@ -107,7 +107,15 @@ NPM的操作
 </ul>
 <h2 id="依赖列表"><a href="#依赖列表" class="headerlink" title="依赖列表"></a>依赖列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">依赖的好处可以详细描述你的项目</div><div class="line">所有的依赖要放入到依赖列表中</div><div class="line">安装时加入到列表里</div></pre></td></tr></table></figure>
 <ul>
-<li>全局安装<br>所有带-g的都表示全局安装，可以在’命令行’下直接使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div><div class="line">tip:gulp:基于文件流的构建系统；主要是方便以后项目上线的时候，自动进行js，css的合并，压缩，语法检查，监听文件变化（一般和3一起用）</div><div class="line">在任何地方安装都可以 因为安装到全局下</div></pre></td></tr></table></figure>
+<li>全局安装<br>所有带-g的都表示全局安装，可以在’命令行’下直接使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install gulp -g</div><div class="line">安装了一个gulp框架:gulp:基于文件流的构建系统；主要是方便以后项目上线的时候，自动进行js，css的合并，压缩，语法检查，监听文件变化（一般和3一起用）</div><div class="line">在任何地方安装都可以 因为安装到全局下</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><ul>
+<li><p>创建用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm adduser</div></pre></td></tr></table></figure>
+</li>
+<li><p>我们想发布我们包 和 jquery一样，让别人使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm publish</div><div class="line">发布之后去https://www.npmjs.com/--&gt;登录(adduser起的名字就ok)查看</div><div class="line">发布之后 可以让别人进行下载</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="查看目录安装"><a href="#查看目录安装" class="headerlink" title="查看目录安装"></a>查看目录安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm root -g</div></pre></td></tr></table></figure>
@@ -126,14 +134,6 @@ NPM的操作
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm uninstall jquery --save</div><div class="line">npm uninstall webpack --save-dev</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="发布包"><a href="#发布包" class="headerlink" title="发布包"></a>发布包</h2><ul>
-<li><p>创建用户</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm adduser</div></pre></td></tr></table></figure>
-</li>
-<li><p>我们想发布我们包 和 jquery一样，让别人使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm publish</div><div class="line">发布之后去https://www.npmjs.com/查看</div><div class="line">发布之后 可以让别人进行下载</div></pre></td></tr></table></figure>
-</li>
-</ul>
 <h2 id="npm的源的问题"><a href="#npm的源的问题" class="headerlink" title="npm的源的问题"></a>npm的源的问题</h2><h2 id="切换源"><a href="#切换源" class="headerlink" title="切换源"></a>切换源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install nrm -g</div></pre></td></tr></table></figure>
 <h2 id="查看所有源"><a href="#查看所有源" class="headerlink" title="查看所有源"></a>查看所有源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm ls</div></pre></td></tr></table></figure>
 <h2 id="使用源"><a href="#使用源" class="headerlink" title="使用源"></a>使用源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao</div></pre></td></tr></table></figure>
@@ -141,7 +141,7 @@ NPM的操作
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/22/npm/" data-id="cis5pwbv90003ysqlmn0le8bl" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/08/22/npm/" data-id="cit8nyvvt0005v4qlc5ag7o23" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -149,6 +149,15 @@ NPM的操作
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/08/24/angular/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          angular
+        
+      </div>
+    </a>
   
   
     <a href="/2016/08/22/hexo/" id="article-nav-older" class="article-nav-link-wrap">
@@ -177,7 +186,7 @@ NPM的操作
   <div class="widget-wrap">
     <h3 class="widget-title">Archieven</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
     </div>
   </div>
 
@@ -190,19 +199,23 @@ NPM的操作
       <ul>
         
           <li>
+            <a href="/2016/09/18/today/">today</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/04/cookie/">express</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/04/express/">express</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/24/angular/">angular</a>
+          </li>
+        
+          <li>
             <a href="/2016/08/22/npm/">NPM</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/22/hexo/">Hexo</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/21/git/">hexo.js</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/21/hello-world/">Hello World</a>
           </li>
         
       </ul>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>angular | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="AngularJs MVC123Model:数据模型层View:视图层,负责展示Controller:控制器，控制逻辑
+1.模块化1.1 创建模块12345一切从模块开始angular.module(name, [requires], [configFn]);name：字符串类型，代表模块的名称；requires：字符串的数组，代表该模块依赖的其他模块列表，如果不依赖其他模块，用空数组即可conf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="angular">
+<meta property="og:url" content="http://yoursite.com/2016/08/24/angular/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="AngularJs MVC123Model:数据模型层View:视图层,负责展示Controller:控制器，控制逻辑
+1.模块化1.1 创建模块12345一切从模块开始angular.module(name, [requires], [configFn]);name：字符串类型，代表模块的名称；requires：字符串的数组，代表该模块依赖的其他模块列表，如果不依赖其他模块，用空数组即可conf">
+<meta property="og:updated_time" content="2016-09-18T13:20:36.507Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="angular">
+<meta name="twitter:description" content="AngularJs MVC123Model:数据模型层View:视图层,负责展示Controller:控制器，控制逻辑
+1.模块化1.1 创建模块12345一切从模块开始angular.module(name, [requires], [configFn]);name：字符串类型，代表模块的名称；requires：字符串的数组，代表该模块依赖的其他模块列表，如果不依赖其他模块，用空数组即可conf">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-angular" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/24/angular/" class="article-date">
+  <time datetime="2016-08-24T08:03:11.000Z" itemprop="datePublished">2016-08-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      angular
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="AngularJs-MVC"><a href="#AngularJs-MVC" class="headerlink" title="AngularJs MVC"></a>AngularJs MVC</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Model:数据模型层</div><div class="line">View:视图层,负责展示</div><div class="line">Controller:控制器，控制逻辑</div></pre></td></tr></table></figure>
+<h2 id="1-模块化"><a href="#1-模块化" class="headerlink" title="1.模块化"></a>1.模块化</h2><h3 id="1-1-创建模块"><a href="#1-1-创建模块" class="headerlink" title="1.1 创建模块"></a>1.1 创建模块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">一切从模块开始</div><div class="line">angular.module(name, [requires], [configFn]);</div><div class="line">name：字符串类型，代表模块的名称；</div><div class="line">requires：字符串的数组，代表该模块依赖的其他模块列表，如果不依赖其他模块，用空数组即可</div><div class="line">configFn：用来对该模块进行一些配置。</div></pre></td></tr></table></figure>
+<h2 id="2-控制器"><a href="#2-控制器" class="headerlink" title="2.控制器"></a>2.控制器</h2><h3 id="2-1-创建控制器"><a href="#2-1-创建控制器" class="headerlink" title="2.1 创建控制器"></a>2.1 创建控制器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">通过模块创建控制器</div><div class="line">angular.module(&apos;appModule&apos;).controller(&apos;appCtrl&apos;,function($scope)&#123;&#125;);</div><div class="line">当前作用域$scope,$scope就是viewModel</div></pre></td></tr></table></figure>
+<h3 id="2-2-控制器特点"><a href="#2-2-控制器特点" class="headerlink" title="2.2 控制器特点"></a>2.2 控制器特点</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">controller和DOM平行</div><div class="line">控制器可以声明变量和方法</div><div class="line">控制器可以嵌套</div><div class="line">子控制器可以继承父控制器</div></pre></td></tr></table></figure>
+<h3 id="2-3-控制器的合理使用"><a href="#2-3-控制器的合理使用" class="headerlink" title="2.3 控制器的合理使用"></a>2.3 控制器的合理使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">不要复用controller</div><div class="line">不要在controller中操作DOM</div><div class="line">不要再controller里格式化数据</div><div class="line">控制器之间交互是通过事件进行的</div></pre></td></tr></table></figure>
+<h2 id="3-scope和-rootScope"><a href="#3-scope和-rootScope" class="headerlink" title="3.$scope和$rootScope"></a>3.$scope和$rootScope</h2><h2 id="3-1-注入-scope和-rootScope"><a href="#3-1-注入-scope和-rootScope" class="headerlink" title="3.1 注入$scope和$rootScope"></a>3.1 注入$scope和$rootScope</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">angular.module(&apos;appModule&apos;).controller(&apos;appCtrl&apos;,function($scope,$rootScope)&#123;&#125;);</div><div class="line">一般使用$rootScope时候都是多视图的项目中，为了达到一个元素多处使用的目的</div></pre></td></tr></table></figure>
+<h2 id="3-2-初始化方法"><a href="#3-2-初始化方法" class="headerlink" title="3.2 初始化方法"></a>3.2 初始化方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">通常情况下我们会将$rootScope上的代码提取声明</div><div class="line">app.run(function($rootScope)&#123;&#125;);</div></pre></td></tr></table></figure>
+<h2 id="3-3-防止代码压缩"><a href="#3-3-防止代码压缩" class="headerlink" title="3.3 防止代码压缩"></a>3.3 防止代码压缩</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,function ($s) &#123;</div><div class="line">    $s.name = &apos;zfpx&apos;;</div><div class="line">&#125;]);</div><div class="line">为了防止通过压缩工具压缩代码后$scope等名称改变报错，一般用数组来存储变量</div></pre></td></tr></table></figure>
+<h2 id="4-watch和-apply"><a href="#4-watch和-apply" class="headerlink" title="4.$watch和$apply"></a>4.$watch和$apply</h2><h3 id="4-1-watch监听模型上的值"><a href="#4-1-watch监听模型上的值" class="headerlink" title="4.1 $watch监听模型上的值"></a>4.1 $watch监听模型上的值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">页面代码</div><div class="line">&lt;div ng-controller=&quot;appCtrl&quot;&gt;</div><div class="line">+    &lt;input type=&quot;text&quot; ng-model=&quot;name&quot;&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>4.1.1 监听写法1:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,function ($s) &#123;</div><div class="line">+        $s.$watch(&apos;name&apos;, function (newVal,oldVal) &#123;</div><div class="line">+            console.log(newVal,oldVal);</div><div class="line">+        &#125;)</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+<ul>
+<li>4.1.2 监听写法2:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,function ($s) &#123;</div><div class="line">       $s.$watch(function () &#123;</div><div class="line">           return $s.name;</div><div class="line">       &#125;, function (newVal,oldVal) &#123;</div><div class="line">           console.log(newVal,oldVal);</div><div class="line">       &#125;);</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-2-watch监听方法"><a href="#4-2-watch监听方法" class="headerlink" title="4.2 $watch监听方法"></a>4.2 $watch监听方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">页面代码</div><div class="line">&lt;div ng-controller=&quot;appCtrl&quot;&gt;</div><div class="line">    &lt;input type=&quot;text&quot; ng-model=&quot;val1&quot;&gt;</div><div class="line">    +</div><div class="line">    &lt;input type=&quot;text&quot; ng-model=&quot;val2&quot;&gt;</div><div class="line">    &#123;&#123;total()&#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line">控制器</div><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,function ($s) &#123;</div><div class="line">        $s.total = function () &#123;</div><div class="line">            return $s.val1+$s.val2;</div><div class="line">        &#125;;</div><div class="line">        $s.$watch($s.total, function (newVal,oldVal) &#123;</div><div class="line">            console.log(newVal,oldVal);</div><div class="line">        &#125;)</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+<h3 id="4-3-apply刷新视图"><a href="#4-3-apply刷新视图" class="headerlink" title="4.3 $apply刷新视图"></a>4.3 $apply刷新视图</h3><ul>
+<li><p>4.3.1 原生的方法不会刷新视图</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">页面代码</div><div class="line">&lt;div ng-controller=&quot;appCtrl&quot;&gt;</div><div class="line">    &#123;&#123;name&#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line">控制器</div><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,function ($s) &#123;</div><div class="line">        $s.name = 1;</div><div class="line">        setInterval(function () &#123;</div><div class="line">            $s.name++</div><div class="line">        &#125;,1000)</div><div class="line">&#125;]);</div><div class="line"> setInterval并不是angular中的方法，不能使用，使用了$apply之后，强制刷新，就可以使用，也可以在agular中注入$interval的服务</div></pre></td></tr></table></figure>
+</li>
+<li><p>4.3.2 通知视图刷新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">通知方式1:导入服务</div><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,&apos;$interval&apos;,function ($s,$interval) &#123;</div><div class="line">    $s.name = 1;</div><div class="line">    setInterval(function () &#123;</div><div class="line">        $s.name++;</div><div class="line">        $s.$apply();</div><div class="line">    &#125;,1000);</div><div class="line">&#125;]);</div><div class="line">通知方式2:强制刷新</div><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,&apos;$interval&apos;,function ($s,$interval) &#123;</div><div class="line">    $s.name = 1;</div><div class="line">    setInterval(function () &#123;</div><div class="line">        $s.$apply(function()&#123;</div><div class="line">            $s.name++;</div><div class="line">        &#125;);</div><div class="line">    &#125;,1000);</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-4-自带的指令会刷新视图"><a href="#4-4-自带的指令会刷新视图" class="headerlink" title="4.4 自带的指令会刷新视图"></a>4.4 自带的指令会刷新视图</h3><ul>
+<li><p>4.4.1 $timeout</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,&apos;$timeout&apos;,function ($s,$timeout) &#123;</div><div class="line">    $s.name = 1;</div><div class="line">    $timeout(function () &#123;</div><div class="line">        $s.name++;</div><div class="line">    &#125;,1000);</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+</li>
+<li><p>4.4.2 $interval</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,&apos;$interval&apos;,function ($s,$interval) &#123;</div><div class="line">    $s.name = 1;</div><div class="line">    $interval(function () &#123;</div><div class="line">        $s.name++;</div><div class="line">    &#125;,1000);</div><div class="line">&#125;]);</div></pre></td></tr></table></figure>
+<ul>
+<li>4.4.3 取消定时器<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.controller(&apos;appCtrl&apos;,[&apos;$scope&apos;,&apos;$interval&apos;,function ($s,$interval) &#123;</div><div class="line">    $s.name = 1;</div><div class="line">    var timer = $interval(function () &#123;</div><div class="line">        $s.name++;</div><div class="line">        $interval.cancel(timer);</div><div class="line">    &#125;,1000);</div><div class="line">&#125;]);</div><div class="line">使用cancle的方法，已经是angular自带的指令就不要在调用$apply去通知了</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="5-ng-href"><a href="#5-ng-href" class="headerlink" title="5.ng-href"></a>5.ng-href</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">表达式生效前不要加载该资源,防止空链接</div><div class="line">&lt;a ng-href=&quot;&#123;&#123; myHref &#125;&#125;&quot;&gt;baidu&lt;/a&gt;</div><div class="line">var app = angular.module(&apos;appModule&apos;,[]);</div><div class="line">app.controller(&apos;appCtrl&apos;,function ($scope,$timeout) &#123;</div><div class="line">  $timeout(function () &#123;</div><div class="line">      $scope.myHref = &apos;http://www.baidu.com&apos;;</div><div class="line">  &#125;,20000)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="6-ng-src"><a href="#6-ng-src" class="headerlink" title="6.ng-src"></a>6.ng-src</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">表达式生效前不引用该资源,防止出现404</div><div class="line">&lt;img ng-src=&quot;&#123;&#123;imgSrc&#125;&#125;&quot;/&gt;</div><div class="line">var app = angular.module(&apos;appModule&apos;,[]);</div><div class="line">app.controller(&apos;appCtrl&apos;,function ($scope,$timeout) &#123;</div><div class="line">    $timeout(function() &#123;</div><div class="line">        $scope.imgSrc = &apos;https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png&apos;;</div><div class="line">    &#125;, 1000);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">服务是公用的方法，把控制器中相同的部分抽取出来封装成一个服务，什么时候用的时候就是把他注入到控制器中使用</div></pre></td></tr></table></figure>
+<ul>
+<li>注入服务<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">myModule.provider(&apos;自定义服务的名字&apos;,function()&#123;this.$get=function()&#123;return &#125;</div><div class="line">注：provider:定义服务</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/08/24/angular/" data-id="cit8nyvvf0000v4qlq7edn0kn" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/04/express/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          express
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/22/npm/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">NPM</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/09/18/today/">today</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/04/cookie/">express</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/04/express/">express</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/24/angular/">angular</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/22/npm/">NPM</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
